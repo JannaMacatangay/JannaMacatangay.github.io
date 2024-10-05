@@ -79,7 +79,7 @@
 .container {
     position: relative;
     display: flex;
-    height: 100vh;
+    height: auto; 
 }
 
 .title-page {
@@ -93,6 +93,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    
 }
 
 .title-page h1 {
@@ -194,62 +195,58 @@
     gap: 10px; 
 }
 
+/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
     .title-page {
-        width: 40%; 
+        width: 100%; /* Full width on smaller screens */
     }
 
     .homepage-picture {
-        width: 60%; 
+        width: 100%; /* Full width on smaller screens */
     }
 
     .wall-img, .text-content {
-        width: 100%; 
-        position: relative;
-        top: 0; 
-        left: 0; 
-        transform: none;
+        width: 100%; /* Full width on smaller screens */
+        position: relative; /* Reset positioning */
     }
 
     .text-content {
-        font-size: 1.5rem; 
-    }
-
-    .button-container {
-        right: 10px; 
-        bottom: 10px;
+        font-size: 1.5rem; /* Adjust font size */
     }
 }
 
 @media (max-width: 768px) {
     .title-page {
-        width: 100%; 
-        align-items: center; 
+        width: 100%; /* Full width on small screens */
+        align-items: center; /* Center text horizontally */
+        padding: 10px; /* Add padding for smaller screens */
     }
 
     .homepage-picture {
-        width: 100%; 
+        width: 100%; /* Full width on small screens */
     }
 
     .wall-img, .text-content {
-        width: 100%; 
-        position: relative;
-        top: 0;
-        left: 0; 
-        transform: none; 
+        width: 100%; /* Full width on small screens */
+        position: relative; /* Reset positioning */
     }
 
     .title-page h1,
     .title-page h2 {
-        font-size: 30px;
+        font-size: 30px; /* Smaller font size */
     }
 
     .text-content {
-        font-size: 1.25rem;
+        font-size: 1.25rem; /* Smaller font size */
     }
 
     .button-container {
-        right: 10px; 
-        bottom: 10px; 
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: flex-end; /* Align buttons to the right */
+    }
+
+    .button-container button {
+        width: 100%; /* Make buttons full width */
+        margin-bottom: 10px; /* Add margin between buttons */
     }
 }
