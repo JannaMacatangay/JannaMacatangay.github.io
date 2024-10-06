@@ -1,13 +1,14 @@
 .background-goblin {
-    background-image: url('pictures-goblin/bg-goblin.png');
-    background-size: cover;
-    background-position: center;
+    background-color: #A1ADB9; 
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 100vh;
-    position: relative;
-    flex: 1;
+    height: 100vh; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: -1;
 }
+
 
 .navbar-logo {
     display: inline-block;
@@ -20,6 +21,10 @@
     transition: transform 0.3s ease;
 }
 
+.navbar-logo:hover {
+    transform: scale(1.1);
+}
+
 .navbar {
     width: 90%;
     margin: auto;
@@ -29,12 +34,15 @@
     justify-content: space-between;
 }
 
-.nav-item {
-    font-size: 1.50rem;
+.nav-item .nav-link {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
 }
 
-.navbar-logo:hover {
-    transform: scale(1.1);
+.nav-item .nav-link:hover {
+    color: #713642;
 }
 
 .navbar-link ul {
@@ -75,6 +83,14 @@
     color: black;
 }
 
+.card {
+    max-width: auto; /* Limit the card's max width */
+    margin: 0 auto; /* Center the card */
+}
+
+.card:hover {
+    transform: scale(0.9);
+}
 
 .container {
     position: relative;
@@ -170,7 +186,6 @@
     left: 5%;
 }
 
-
 .text-content {
     width: 40%;
     text-align: justify;
@@ -192,4 +207,12 @@
     bottom: 20px;
     display: flex; 
     gap: 10px; 
+}
+
+.h1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 50px; 
+    margin-bottom: 350px;
 }
