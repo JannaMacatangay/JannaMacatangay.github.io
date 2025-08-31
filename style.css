@@ -1,0 +1,84 @@
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #FDFFB8;
+    }
+
+    .bg-pink {
+        background-color: #F15796;
+    }
+
+    .bg-yellow {
+        background-color: #FDFFB8;
+
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: 'Instrument Serif', serif;
+    }
+
+
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .tagline {
+        color: #F15796;
+        font-weight: 500;
+    }
+
+    .btn-view {
+        background: #63C8FF;
+        color: #272526;
+    }
+
+    .projects {
+        background-color: #F15796;
+        height: 300px;
+    }
+
+    .project-logo {
+        height: 90px;
+        width: 150px;
+        object-fit: contain;
+    }
+
+    .project-logo[src*="small-logo.png"] {
+        height: 60px;
+        width: 100px;
+        padding-top: 30px;
+    }
+
+    .projects-slider {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        background: #F15796;
+    }
+
+    .projects-track {
+        display: flex;
+        width: max-content;
+        animation: scroll 20s linear infinite;
+    }
+
+
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
